@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  main {
+    font-family: "roboto";
+  }
+  footer {
+    background: rgb(47, 46, 46);
+    padding: 20px 0 20px 0;
+  }
+  
+  .fonctionnement {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .btn-menu {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .restaurants ul {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fonctionnement__btn__icon {
+    color: #888;
+  }

@@ -1,0 +1,368 @@
+/*-----Import--------*/
+@import "reset.scss";
+@import "variable.scss";
+/******header*****/
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Shrikhand";
+  position: relative;
+}
+/********Search*******/
+.localisation {
+  &__ville{ 
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 5px $grey;
+  background: $medium-grey;
+  padding: 20px 20px 20px 0px;
+  gap: 15px;
+  font-size: 20px;
+}
+  &__restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  box-shadow: 0px 0px 2px $grey;
+  background: $light-grey;
+  &__title {
+    font-size: 25px;
+  }
+  &__subtitel {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  &__btn {
+    padding: 15px;
+    border-radius: 50px;
+    background: linear-gradient(to bottom,$pink ,$purple);
+    color: $white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin: 30px 0;
+    width: 270px;
+  }
+}}
+/****Fonctionnemnt***/
+.fonctionnement {
+ & ul {
+  display: flex;
+  gap: 25px;
+}
+ & h2 {
+  margin: 40px 0 30px -14px;
+}
+ &__btn {
+  box-shadow: 0px 0px 2px $grey;
+  padding: 20px 20px 20px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 15px;
+  background: $light-grey;
+  width: 100%;
+  position: relative;
+  font-family: "roboto";
+  cursor: pointer;
+  &__icon {
+    padding-right: 20px;
+  }
+  &__chiffre i {
+    box-shadow: 0px 0px 2px $grey;
+    padding: 0.5em 0.7em;
+    width: 8px;
+    border-radius: 60%;
+    background: $purple;
+    position: absolute;
+    left: -14px;
+    bottom: 15px;
+    font-size: 15px;
+    color: $white;
+  }
+  &__chiffre .fa-3,
+  .fa-2,
+  .fa-1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+}
+/*************restaurants**************/
+h3 {
+  margin-left: 5.5%;
+  padding: 30px 0 15px 0;
+  font-size: 25px;
+}
+ul .separation {
+  display: flex;
+}
+.restaurants {
+  background: $light-grey;
+  padding-bottom: 50px;
+  margin-top: 60px;
+&__photo li {
+  width: 47%;
+  border-radius: 15px;
+}
+&__photo .separation {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+&__image {
+  display: flex;
+  justify-items: end;
+  justify-content: end;
+}
+&__image img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+}
+&__nouvelle__carte {
+  background: $green;
+  color: $dark-green;
+  position: absolute;
+  padding: 12px;
+  margin: 12px;
+  font-weight: bold;
+}
+}
+.cover__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  height: 70px;
+  color: $black;
+  background: $white;
+  border-radius: 0 0 15px 15px;
+  &__coeur {
+    font-size: 30px;
+    position: relative;
+    right: 5%;
+  }
+  &__stitre {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__arrondissement {
+    font-size: 18px;
+  }
+}
+/*****footer*****/
+.footer { 
+  margin-left: 5.5%;
+&-restaurant {
+padding: 16px;
+}
+&-partenaire {
+  padding: 10px;
+}
+& span {
+  color: $white;
+}
+&-log img {
+  filter: brightness(0) invert(1);
+  margin-bottom: 20px;
+}
+}
+/***les pages menu****/
+.fa-arrow-left {
+  font-size: 20px;
+  position: absolute;
+  left: 2%;
+}
+.page__grise {
+  background: $light-grey;
+  padding-bottom: 5px;
+
+&__cover__titre{
+  transform: translateY(-40px);
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  height: 70px;
+  color: $black;
+  background: $light-grey;
+}
+&__cover__coeur {
+  display: flex;
+  width: 95%;
+}
+&__titre {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Shrikhand";
+  width: 100%;
+  margin-left: 5%;
+  position: relative;
+}
+&__coeur1 {
+  font-size: 30px;
+  position: absolute;
+  right: 6%;
+}
+&__coeur2 {
+  position: absolute;
+  font-size: 30px;
+  right: 6%;
+  color: $pink;
+  visibility: hidden;
+}
+&__coeur2::before {
+  content: "";
+  transition: color 1s ease-out;
+  
+}
+&__coeur2 a:hover{
+  color: $pink;
+  visibility: visible;
+}
+}
+.page__menu {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+& ul {
+  display: flex;
+  gap: 25px;
+}
+&__menu {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 20px 0;
+  background: $green;
+  width: 50px;
+  
+}
+&__carte {
+  box-shadow: 0px 0px 2px $grey;
+  padding: 20px 20px 20px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 15px;
+  background: $white;
+  width: 100%;
+  font-family: "roboto";
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+&__titre {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+&__stitre {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+& p{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+&__mony {
+  font-weight: bold;
+}
+}
+.bouton {
+  margin: 40px 0 50px 0;
+  display: flex;
+  justify-content: center;
+
+&__commander {
+  padding: 12px 20px;
+  border-radius: 50px;
+  background: linear-gradient(to bottom,$pink ,$purple);
+  color: $white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  margin-top: 30px;
+}
+}
+/*--responsive version tablette--*/
+@media (max-width: 992px) {
+  .localisation__restaurant{ 
+  &__title {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  &__subtitel {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+  }
+}
+  .fonctionnement{ 
+  & ul {
+    display: flex;
+    flex-direction: column;
+  }
+  &__btn {
+    width: auto;
+  }
+}
+  .restaurants__photo li {
+    width: 100%;
+  }
+  .page__menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .page__menu ul li{
+    width: auto;
+  }
+  .page__menu__menu {
+    padding-left: 2%;
+  }
+}
+/*--responsive version mobile--*/
+@media (max-width: 767px) {
+  .fonctionnement{ 
+    & ul {
+      display: flex;
+      flex-direction: column;
+    }
+    &__btn {
+      width: auto;
+    }
+  }
+  .restaurant__photo li {
+    width: 100%;
+  }
+  .page__grise__titre {
+    font-size: 25px;
+  }
+  .page__menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .page__menu__menu {
+    padding-left: 0.5%;
+  }
+  .page__grise__coeur1 {
+    font-size: 28px;
+  }
+}
+
+  
