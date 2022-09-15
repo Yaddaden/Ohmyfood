@@ -291,11 +291,12 @@ ul .separation {
   gap: 25px;
 }
 .page__menu__menu {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
-  padding: 20px 0;
-  background: #99E2D0;
+  padding: 10px 0 10px 0;
+  border-bottom: 3px solid #99E2D0;
   width: 50px;
+  margin: 40px 0 25px 0;
 }
 .page__menu__carte {
   box-shadow: 0px 0px 2px #888;
@@ -320,6 +321,7 @@ ul .separation {
   justify-content: space-between;
   font-weight: 400;
   font-size: 16px;
+  padding-top: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -379,9 +381,6 @@ ul .separation {
   .page__menu ul li {
     width: auto;
   }
-  .page__menu__menu {
-    padding-left: 2%;
-  }
 }
 /*--responsive version mobile--*/
 @media (max-width: 767px) {
@@ -401,9 +400,6 @@ ul .separation {
   .page__menu ul {
     display: flex;
     flex-direction: column;
-  }
-  .page__menu__menu {
-    padding-left: 0.5%;
   }
   .page__grise__coeur1 {
     font-size: 28px;
