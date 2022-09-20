@@ -58,6 +58,37 @@ footer {
   position: relative;
 }
 
+/*******loader**********/
+.loader {
+  animation: loader 0.01s;
+  animation-fill-mode: both;
+  position: fixed;
+  justify-content: center;
+}
+.loader__conteneur {
+  display: flex;
+  width: 5rem;
+  justify-content: space-between;
+}
+.loader__conteneur__1 .loader__conteneur__2 .loader__conteneur__3 {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  animation: jump 1s;
+  animation-iteration-count: 1;
+}
+.loader__conteneur__1 {
+  background: #9356dc;
+}
+.loader__conteneur__2 {
+  background: #ff79da;
+  animation-delay: 0.25s;
+}
+.loader__conteneur__3 {
+  background: #99E2D0;
+  animation-delay: 0.5s;
+}
+
 /********Search*******/
 .localisation__ville {
   display: flex;
@@ -93,6 +124,11 @@ footer {
   border: none;
   margin: 30px 0;
   width: 270px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.localisation__restaurant__btn:hover {
+  transform: scale(1.1);
 }
 
 /****Fonctionnemnt***/
@@ -218,7 +254,7 @@ ul .separation {
 .footer-partenaire {
   padding: 10px;
 }
-.footer span {
+.footer a {
   color: hwb(0 100% 0%);
 }
 .footer-log img {
@@ -264,6 +300,7 @@ ul .separation {
   font-size: 30px;
   position: absolute;
   right: 6%;
+  color: rgb(0, 0, 0);
 }
 .page__grise__coeur2 {
   position: absolute;
@@ -272,11 +309,7 @@ ul .separation {
   color: #ff79da;
   visibility: hidden;
 }
-.page__grise__coeur2::before {
-  content: "";
-  transition: color 1s ease-out;
-}
-.page__grise__coeur2 a:hover {
+.page__grise__coeur2:hover .page__grise__coeur1 {
   color: #ff79da;
   visibility: visible;
 }
@@ -300,7 +333,7 @@ ul .separation {
 }
 .page__menu__carte {
   box-shadow: 0px 0px 2px #888;
-  padding: 20px 20px 20px 30px;
+  padding: 10px 20px 10px 30px;
   font-size: 17px;
   font-weight: bold;
   border-radius: 15px;
@@ -333,6 +366,36 @@ ul .separation {
 }
 .page__menu__mony {
   font-weight: bold;
+  transition: 500ms;
+}
+.page__menu__carte:hover .fa-check {
+  margin-right: 4rem;
+}
+.page__menu__carte:hover .page__menu__confirmation {
+  margin-left: 5rem;
+  transition: 500ms;
+}
+.page__menu__confirmation .fa-check {
+  position: absolute;
+  background-color: #99E2D0;
+  display: flex;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 4rem;
+  transform: translateX(100%);
+  transition: 500ms;
+}
+.page__menu__mony .page__menu__confirmation {
+  transition: 500ms;
+}
+
+.fa-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: hwb(0 100% 0%);
 }
 
 .bouton {
