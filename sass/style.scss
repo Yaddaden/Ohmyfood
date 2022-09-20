@@ -177,10 +177,27 @@ ul .separation {
   color: $black;
   background: $white;
   border-radius: 0 0 15px 15px;
+  position: relative;
   &__coeur {
     font-size: 30px;
-    position: relative;
+    position: absolute;
     right: 5%;
+  }
+  &__coeur0{
+    font-size: 30px;
+    position: absolute;
+    right: 5%;
+    opacity: 0;
+    background: linear-gradient($pink,$purple);
+    color: linear-gradient($pink,$purple);
+  }
+  &__coeur0:hover{
+    opacity: 1;
+    color: linear-gradient($pink,$purple);
+    background: linear-gradient($pink,$purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: 500ms;
   }
   &__stitre {
     font-weight: bold;
@@ -192,13 +209,12 @@ ul .separation {
 }
 /*****footer*****/
 .footer { 
+  font-family: "roboto";
   margin-left: 5.5%;
-&-restaurant {
-padding: 16px;
+& div{
+  margin-top:5px ;
 }
-&-partenaire {
-  padding: 10px;
-}
+
 & a {
   color: $white;
 }
@@ -244,25 +260,30 @@ padding: 16px;
   font-size: 30px;
   position: absolute;
   right: 6%;
-  color: $black;
+  opacity: 1;
+  color:$black
 }
-&__coeur2  {
+&__coeur2 {
   position: absolute;
   font-size: 30px;
   right: 6%;
-  color: $pink;
-  visibility: hidden;
+  background: linear-gradient($pink,$purple);
+  color: linear-gradient($pink,$purple);
+  opacity: 0; 
 }
-&__coeur2:hover &__coeur1{
-  color: $pink;
-  visibility: visible;
+&__coeur2:hover{
+  opacity: 1;
+  background: linear-gradient(45deg, $pink, $purple);
+  color: linear-gradient(45deg, $pink,$purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 500ms;
 }
 }
 .page__menu {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-
 & ul {
   display: flex;
   gap: 25px;

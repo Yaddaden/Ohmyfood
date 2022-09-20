@@ -230,11 +230,28 @@ ul .separation {
   color: rgb(0, 0, 0);
   background: hwb(0 100% 0%);
   border-radius: 0 0 15px 15px;
+  position: relative;
 }
 .cover__content__coeur {
   font-size: 30px;
-  position: relative;
+  position: absolute;
   right: 5%;
+}
+.cover__content__coeur0 {
+  font-size: 30px;
+  position: absolute;
+  right: 5%;
+  opacity: 0;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: linear-gradient(#ff79da, #9356dc);
+}
+.cover__content__coeur0:hover {
+  opacity: 1;
+  color: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 500ms;
 }
 .cover__content__stitre {
   font-weight: bold;
@@ -246,13 +263,11 @@ ul .separation {
 
 /*****footer*****/
 .footer {
+  font-family: "roboto";
   margin-left: 5.5%;
 }
-.footer-restaurant {
-  padding: 16px;
-}
-.footer-partenaire {
-  padding: 10px;
+.footer div {
+  margin-top: 5px;
 }
 .footer a {
   color: hwb(0 100% 0%);
@@ -300,18 +315,24 @@ ul .separation {
   font-size: 30px;
   position: absolute;
   right: 6%;
+  opacity: 1;
   color: rgb(0, 0, 0);
 }
 .page__grise__coeur2 {
   position: absolute;
   font-size: 30px;
   right: 6%;
-  color: #ff79da;
-  visibility: hidden;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: linear-gradient(#ff79da, #9356dc);
+  opacity: 0;
 }
-.page__grise__coeur2:hover .page__grise__coeur1 {
-  color: #ff79da;
-  visibility: visible;
+.page__grise__coeur2:hover {
+  opacity: 1;
+  background: linear-gradient(45deg, #ff79da, #9356dc);
+  color: linear-gradient(45deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 500ms;
 }
 
 .page__menu {
