@@ -61,10 +61,12 @@ footer {
 /*******loader**********/
 .loader {
   position: fixed;
-  background-color: hwb(0 100% 0%);
-  z-index: -1;
   inset: 0;
-  opacity: 0.9;
+  background: rgb(250, 245, 245);
+  z-index: 2;
+  animation-delay: 3s;
+  animation: loader 3s linear;
+  animation-fill-mode: forwards;
 }
 .loader__spiner {
   position: fixed;
@@ -76,16 +78,27 @@ footer {
   border-radius: 50%;
   margin: auto;
   inset: 0;
-  animation: spin 1s linear infinite;
+  animation-delay: 3s;
+  animation: spin 3s linear;
   animation-fill-mode: forwards;
 }
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    visibility: visible;
   }
   100% {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+@keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
   }
 }
 /********Search*******/
@@ -151,6 +164,8 @@ footer {
   position: relative;
   font-family: "roboto";
   cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .fonctionnement__btn__icon {
   padding-right: 20px;
