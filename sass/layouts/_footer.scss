@@ -1,0 +1,15 @@
+.footer { 
+    font-family: "roboto";
+    margin-left: 5.5%;
+  & div{
+    margin-top:5px ;
+  }
+  
+  & a {
+    color: $white;
+  }
+  &-log img {
+    filter: brightness(0) invert(1);
+    margin-bottom: 20px;
+  }
+  }

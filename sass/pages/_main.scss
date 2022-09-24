@@ -1,0 +1,239 @@
+/********Search*******/
+.localisation {
+    &__ville{ 
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 5px $grey;
+    background: $medium-grey;
+    padding: 20px 20px 20px 0px;
+    gap: 15px;
+    font-size: 20px;
+  }
+    &__restaurant {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    box-shadow: 0px 0px 2px $grey;
+    background: $light-grey;
+    &__title {
+      font-size: 25px;
+    }
+    &__subtitel {
+      font-size: 18px;
+      font-weight: 300;
+    }
+    &__btn {
+      padding: 15px;
+      border-radius: 50px;
+      background: linear-gradient(to bottom,$pink ,$purple);
+      color: $white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      margin: 30px 0;
+      width: 270px;
+      transform: scale(1);
+      transition: transform (400ms);
+      &:hover{
+        opacity: 0.9;
+        box-shadow: 0.25rem 0.25rem 10px $black;
+        transition-duration: .25s;
+      }
+    }
+  }}
+  /****Fonctionnemnt***/
+  .fonctionnement {
+   & ul {
+    display: flex;
+    gap: 25px;
+  }
+   & h2 {
+    margin: 40px 0 30px -14px;
+  }
+   &__btn {
+    box-shadow: 0.05rem 0.05rem 2px $grey;
+    padding: 20px 20px 20px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 15px;
+    background: $light-grey;
+    width: 100%;
+    position: relative;
+    font-family: "roboto";
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &__icon {
+      padding-right: 20px;
+    }
+    &__chiffre i {
+      box-shadow: 0px 0px 2px $grey;
+      padding: 0.5em 0.7em;
+      width: 8px;
+      border-radius: 60%;
+      background: $purple;
+      position: absolute;
+      left: -14px;
+      bottom: 15px;
+      font-size: 15px;
+      color: $white;
+    }
+    &__chiffre .fa-3,
+    .fa-2,
+    .fa-1 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  }
+  /*************restaurants**************/
+  h3 {
+    margin-left: 5.5%;
+    padding: 30px 0 15px 0;
+    font-size: 25px;
+  }
+  ul .separation {
+    display: flex;
+  }
+  .restaurants {
+    background: $light-grey;
+    padding-bottom: 50px;
+    margin-top: 60px;
+  &__photo li {
+    width: 47%;
+    border-radius: 15px;
+  }
+  &__photo .separation {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  &__image {
+    display: flex;
+    justify-items: end;
+    justify-content: end;
+  }
+  &__image img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+  }
+  &__nouvelle__carte {
+    background: $green;
+    color: $dark-green;
+    position: absolute;
+    padding: 12px;
+    margin: 12px;
+    font-weight: bold;
+  }
+  }
+  .cover__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    height: 70px;
+    color: $black;
+    background: $white;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    &__coeur {
+      font-size: 30px;
+      position: absolute;
+      right: 5%;
+    }
+    &__coeur0 {
+      font-size: 30px;
+      position: absolute;
+      right: 5%;
+      
+      background: linear-gradient(360deg, $purple, $pink);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      opacity: 0;
+    }
+    &__coeur0:hover{
+      opacity: 1;
+      transition: 200ms;
+    }
+    &__stitre {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    &__arrondissement {
+      font-size: 18px;
+    }
+  }
+  /*****footer*****/
+  
+  /***les pages menu****/
+  
+  /*--responsive version tablette--*/
+  @media (max-width: 992px) {
+    .localisation__restaurant{ 
+    &__title {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+    }
+    &__subtitel {
+      width: 85%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+    .fonctionnement{ 
+    & ul {
+      display: flex;
+      flex-direction: column;
+    }
+    &__btn {
+      width: auto;
+    }
+  }
+    .restaurants__photo li {
+      width: 100%;
+    }
+    .page__menu{ 
+    & ul {
+      display: flex;
+      flex-direction: column;
+    }
+    & ul li{
+      width: auto;
+    }
+    }
+  }
+  /*--responsive version mobile--*/
+  @media (max-width: 767px) {
+  
+    .fonctionnement{ 
+      & ul {
+        display: flex;
+        flex-direction: column; 
+      }
+      &__btn {
+        width: auto;
+      }
+    }
+    .restaurant__photo li {
+      width: 100%;
+    }
+    .page__grise__titre {
+      font-size: 25px;
+    }
+    .page__menu ul {
+      display: flex;
+      flex-direction: column;
+    }
+    .page__grise__coeur1 {
+      font-size: 28px;
+    }
+  }
+  

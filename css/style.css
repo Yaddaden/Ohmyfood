@@ -49,7 +49,6 @@ footer {
   color: #888;
 }
 
-/******header*****/
 .logo {
   display: flex;
   justify-content: center;
@@ -101,181 +100,6 @@ footer {
     visibility: hidden;
   }
 }
-/********Search*******/
-.localisation__ville {
-  display: flex;
-  justify-content: center;
-  box-shadow: 0px 0px 5px #888;
-  background: rgb(234, 228, 228);
-  padding: 20px 20px 20px 0px;
-  gap: 15px;
-  font-size: 20px;
-}
-.localisation__restaurant {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 0px 2px #888;
-  background: rgb(250, 245, 245);
-}
-.localisation__restaurant__title {
-  font-size: 25px;
-}
-.localisation__restaurant__subtitel {
-  font-size: 18px;
-  font-weight: 300;
-}
-.localisation__restaurant__btn {
-  padding: 15px;
-  border-radius: 50px;
-  background: linear-gradient(to bottom, #ff79da, #9356dc);
-  color: hwb(0 100% 0%);
-  font-size: 17px;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  margin: 30px 0;
-  width: 270px;
-  transform: scale(1);
-  transition: transform 400ms;
-}
-.localisation__restaurant__btn:hover {
-  opacity: 0.9;
-  box-shadow: 0.25rem 0.25rem 10px rgb(0, 0, 0);
-  transition-duration: 0.25s;
-}
-
-/****Fonctionnemnt***/
-.fonctionnement ul {
-  display: flex;
-  gap: 25px;
-}
-.fonctionnement h2 {
-  margin: 40px 0 30px -14px;
-}
-.fonctionnement__btn {
-  box-shadow: 0.05rem 0.05rem 2px #888;
-  padding: 20px 20px 20px 30px;
-  font-size: 17px;
-  font-weight: bold;
-  border-radius: 15px;
-  background: rgb(250, 245, 245);
-  width: 100%;
-  position: relative;
-  font-family: "roboto";
-  cursor: pointer;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.fonctionnement__btn__icon {
-  padding-right: 20px;
-}
-.fonctionnement__btn__chiffre i {
-  box-shadow: 0px 0px 2px #888;
-  padding: 0.5em 0.7em;
-  width: 8px;
-  border-radius: 60%;
-  background: #9356dc;
-  position: absolute;
-  left: -14px;
-  bottom: 15px;
-  font-size: 15px;
-  color: hwb(0 100% 0%);
-}
-.fonctionnement__btn__chiffre .fa-3,
-.fonctionnement__btn .fa-2,
-.fonctionnement__btn .fa-1 {
-  display: flex;
-  justify-content: center;
-}
-
-/*************restaurants**************/
-h3 {
-  margin-left: 5.5%;
-  padding: 30px 0 15px 0;
-  font-size: 25px;
-}
-
-ul .separation {
-  display: flex;
-}
-
-.restaurants {
-  background: rgb(250, 245, 245);
-  padding-bottom: 50px;
-  margin-top: 60px;
-}
-.restaurants__photo li {
-  width: 47%;
-  border-radius: 15px;
-}
-.restaurants__photo .separation {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-.restaurants__image {
-  display: flex;
-  justify-items: end;
-  justify-content: end;
-}
-.restaurants__image img {
-  width: 100%;
-  height: 250px;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
-  object-position: center;
-  position: relative;
-}
-.restaurants__nouvelle__carte {
-  background: #99E2D0;
-  color: rgb(4, 121, 4);
-  position: absolute;
-  padding: 12px;
-  margin: 12px;
-  font-weight: bold;
-}
-
-.cover__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px 0 10px;
-  height: 70px;
-  color: rgb(0, 0, 0);
-  background: hwb(0 100% 0%);
-  border-radius: 0 0 15px 15px;
-  position: relative;
-}
-.cover__content__coeur {
-  font-size: 30px;
-  position: absolute;
-  right: 5%;
-}
-.cover__content__coeur0 {
-  font-size: 30px;
-  position: absolute;
-  right: 5%;
-  background: linear-gradient(360deg, #9356dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  opacity: 0;
-}
-.cover__content__coeur0:hover {
-  opacity: 1;
-  transition: 200ms;
-}
-.cover__content__stitre {
-  font-weight: bold;
-  font-size: 20px;
-}
-.cover__content__arrondissement {
-  font-size: 18px;
-}
-
-/*****footer*****/
 .footer {
   font-family: "roboto";
   margin-left: 5.5%;
@@ -291,7 +115,6 @@ ul .separation {
   margin-bottom: 20px;
 }
 
-/***les pages menu****/
 .fa-arrow-left {
   font-size: 20px;
   position: absolute;
@@ -492,6 +315,182 @@ ul .separation {
   transition-duration: 0.25s;
 }
 
+/********Search*******/
+.localisation__ville {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 5px #888;
+  background: rgb(234, 228, 228);
+  padding: 20px 20px 20px 0px;
+  gap: 15px;
+  font-size: 20px;
+}
+.localisation__restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 2px #888;
+  background: rgb(250, 245, 245);
+}
+.localisation__restaurant__title {
+  font-size: 25px;
+}
+.localisation__restaurant__subtitel {
+  font-size: 18px;
+  font-weight: 300;
+}
+.localisation__restaurant__btn {
+  padding: 15px;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  color: hwb(0 100% 0%);
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin: 30px 0;
+  width: 270px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.localisation__restaurant__btn:hover {
+  opacity: 0.9;
+  box-shadow: 0.25rem 0.25rem 10px rgb(0, 0, 0);
+  transition-duration: 0.25s;
+}
+
+/****Fonctionnemnt***/
+.fonctionnement ul {
+  display: flex;
+  gap: 25px;
+}
+.fonctionnement h2 {
+  margin: 40px 0 30px -14px;
+}
+.fonctionnement__btn {
+  box-shadow: 0.05rem 0.05rem 2px #888;
+  padding: 20px 20px 20px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 15px;
+  background: rgb(250, 245, 245);
+  width: 100%;
+  position: relative;
+  font-family: "roboto";
+  cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fonctionnement__btn__icon {
+  padding-right: 20px;
+}
+.fonctionnement__btn__chiffre i {
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.7em;
+  width: 8px;
+  border-radius: 60%;
+  background: #9356dc;
+  position: absolute;
+  left: -14px;
+  bottom: 15px;
+  font-size: 15px;
+  color: hwb(0 100% 0%);
+}
+.fonctionnement__btn__chiffre .fa-3,
+.fonctionnement__btn .fa-2,
+.fonctionnement__btn .fa-1 {
+  display: flex;
+  justify-content: center;
+}
+
+/*************restaurants**************/
+h3 {
+  margin-left: 5.5%;
+  padding: 30px 0 15px 0;
+  font-size: 25px;
+}
+
+ul .separation {
+  display: flex;
+}
+
+.restaurants {
+  background: rgb(250, 245, 245);
+  padding-bottom: 50px;
+  margin-top: 60px;
+}
+.restaurants__photo li {
+  width: 47%;
+  border-radius: 15px;
+}
+.restaurants__photo .separation {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.restaurants__image {
+  display: flex;
+  justify-items: end;
+  justify-content: end;
+}
+.restaurants__image img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+}
+.restaurants__nouvelle__carte {
+  background: #99E2D0;
+  color: rgb(4, 121, 4);
+  position: absolute;
+  padding: 12px;
+  margin: 12px;
+  font-weight: bold;
+}
+
+.cover__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  height: 70px;
+  color: rgb(0, 0, 0);
+  background: hwb(0 100% 0%);
+  border-radius: 0 0 15px 15px;
+  position: relative;
+}
+.cover__content__coeur {
+  font-size: 30px;
+  position: absolute;
+  right: 5%;
+}
+.cover__content__coeur0 {
+  font-size: 30px;
+  position: absolute;
+  right: 5%;
+  background: linear-gradient(360deg, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+.cover__content__coeur0:hover {
+  opacity: 1;
+  transition: 200ms;
+}
+.cover__content__stitre {
+  font-weight: bold;
+  font-size: 20px;
+}
+.cover__content__arrondissement {
+  font-size: 18px;
+}
+
+/*****footer*****/
+/***les pages menu****/
 /*--responsive version tablette--*/
 @media (max-width: 992px) {
   .localisation__restaurant__title {
@@ -545,3 +544,4 @@ ul .separation {
     font-size: 28px;
   }
 }
+/******header*****/

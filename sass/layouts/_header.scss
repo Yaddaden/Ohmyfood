@@ -1,0 +1,52 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Shrikhand";
+    position: relative;
+  }
+  /*******loader**********/
+   .loader{ 
+    position: fixed;
+    inset: 0;
+    background: $light-grey; 
+    z-index: 2;
+    animation-delay: 3s;
+    animation: loader 3s  linear;
+    animation-fill-mode:forwards;
+    
+    &__spiner{    
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    border: 5px solid $green;
+    border-top: 5px solid $pink;
+    border-bottom: 5px solid $purple;
+    border-radius: 50%;
+    margin: auto;
+    inset: 0;
+    animation-delay: 3s;
+    animation: spin 3s  linear;
+    animation-fill-mode:forwards;
+    
+  }}
+  @keyframes spin{
+    0%{
+      transform: rotate(0deg);
+      visibility: visible;
+    }
+  100%{
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+  } 
+  @keyframes loader{
+    0%{
+      
+      visibility: visible;
+    }
+  100%{
+    
+    visibility: hidden;
+  }
+  } 
