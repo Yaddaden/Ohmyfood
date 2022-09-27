@@ -261,7 +261,7 @@ footer {
   transition: 500ms;
 }
 .page__menu__carte:hover .fa-check {
-  transform: rotate(0deg);
+  transform: rotate(360deg);
   transition: 500ms;
 }
 .page__menu__confirmation .cercle {
