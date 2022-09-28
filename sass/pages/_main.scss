@@ -65,15 +65,17 @@
     cursor: pointer;
     text-overflow: ellipsis;
     white-space: nowrap;
-     &:hover  {
+    transition: 200ms;
+     &:hover {
       background: $light-purple; 
+      .fonctionnement__btn__icon{
+        color:$purple;
+      }
     }
     &__icon {
       padding-right: 20px;
       padding-left: 10px;
-    &:hover{
-      color: $purple;
-    }
+      transition: 200ms; 
     }
     &__chiffre i {
       box-shadow: 0px 0px 2px $grey;
